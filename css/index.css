@@ -19,7 +19,7 @@
     }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: portrait) {
     #info-box {
         display: block;
         margin-right: 0px;
