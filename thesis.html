@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thesis</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/thesis.css"/>
+</head>
+<body>
+    <header id="top-bar">
+        <nav style="background-color: #18181B;" class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand cyan-text" href="Index.html">davidszuhai</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="thesis.html">Thesis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-top: 70px" class="container text-center white-text">
+        <main role="main" class="pb-3">
+            <h1 class="cyan-text">The state and process of mobile game development.</h1>
+            <h3 class="cyan-text mb-5">(original title: "Mobiljáték-fejlesztés helyzete és folyamatának bemutatása")</h3>
+
+            <div class="flex-center-center block-at-550">
+                <div>
+                    <div class="mb-1"><img src="images/thesis/world_mobil_usage_en.png" width="auto" height="170px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" /></div>
+                    <p class="small-text">- World mobile usage -</p>
+                </div>
+                <div class="content-box mw-800px">
+                    <div class="d-block">
+                        <h4 class="cyan-text">Coming up with the idea</h4>
+                        <p>I was always interested in games, been playing since a young age. That is the reason why I studied Computer Science and I knew I wanted to write my thesis on this topic. Because of the size of the topic, I narrowed it down to mobile games but still, it had a lot of things to write about. Also, I already had the idea of World of Agriculture in my head so it was a perfect topic for me, this way I have my game and I can have my thesis too. With all this, I could start work and get closer to my diploma. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-center-center block-at-550">
+                <div class="content-box mw-800px">
+                    <div class="d-block">
+                        <h4 class="cyan-text">The content</h4>
+                        <p>I had two main goals with my thesis, first to show the state of mobile game development, and how the big companies do it. Secondly to demonstrate the development process of a mobile game through the three main stages, planning, programming and publishing. Throughout the paper, I compared my process to real-life examples from industry-defining companies. A big part of the planning stage was the comparison of iOS and Android to see what they offer for how much, and also to figure out for myself where would I publish my game. For better visuals, I created graphs and also included my handwritten notes as images. </p>
+                    </div>
+                </div>
+                <div>
+                    <img class="mb-1" src="images/thesis/elso-tervek2.png" width="auto" height="200px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <p class="small-text">- First plans -</p>
+                </div>
+            </div>
+
+            <div class="flex-center-center block-at-550">
+                <div>
+                    <img class="mb-1" src="images/thesis/todo-list.png" width="auto" height="200px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <p class="small-text">- Todo list -</p>
+                </div>
+                <div class="content-box mw-800px">
+                    <div class="d-block">
+                        <h4 class="cyan-text">All-in-all</h4>
+                        <p>I enjoyed writing my thesis, I always liked writing stories and this was something like that. Furthermore, I learned a lot with this, firstly about development with Unity and programming as a whole, and secondly about the game industry. I made a detailed description of the mobile game market and the practices of leading companies, I even went into VR/AR a bit. So I got a thesis which I got the best grade for and also I have a published game that is available on the market, and I started my game/software developer journey.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div style="background: none;" class="modal-content">
+                        <div class="modal-body flex-center-center">
+                            <img style="max-width: 85vw; max-height: 85vh" id="modal-image" src="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" data-bs-theme="dark">
+        <div class="container">
+            &copy; 2023 - davidszuhai
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

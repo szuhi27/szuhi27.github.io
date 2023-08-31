@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>projects</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/projects.css"/>
+</head>
+<body>
+    <header id="top-bar">
+        <nav style="background-color: #18181B;" class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand cyan-text" href="Index.html">davidszuhai</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="thesis.html">Thesis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="margin-top: 70px" class="container text-center white-text">
+        <main role="main" class="pb-3">
+            <h1 class="mb-4 cyan-text">My projects</h1>
+
+            <div class="content-box mb-3 project">
+                <div class="d-block me-2 project-text">
+                    <div>
+                        <img class="image" src="images/projects/woa/logo2.png" width="40px" height="40px" />
+                        <h4 class="d-inline-block"><a href="https://play.google.com/store/apps/details?id=com.WorldofAgriculture.WorldofAgriculture" target="_blank" class="cyan-text">World of Agriculture</a></h4>
+                    </div>
+            
+                    <p>My first complete game was made towards the end of university in connection with my thesis. It was made with the Unity engine, It was a long project because there were a lot of new things but I also learned a lot. W.o.A is a 2D agricultural manager game published on Android as a free game. The graphics and images were made by me, mainly to test my skills in this department as well.</p>
+                </div>
+                <div class="m-2 ms-0">
+                    <img class="image" src="images/projects/woa/menu.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="image" src="images/projects/woa/town.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="image" src="images/projects/woa/farm.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="image me-0" src="images/projects/woa/lands.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                </div>
+            </div>
+            
+            <div class="content-box mb-3 project">
+                <div class="d-block me-2 project-text">
+                    <h4><a href="https://github.com/szuhi27/ActivityManager" target="_blank" class="cyan-text">ActivityManager</a></h4>
+                    <p>I made a software to record activities, where you can start an activity, and stop it when it ends, and the program calculates the length of the activity. First I made it with Unity, then as a C# console application and finally as an ASP.NET Core web app. The first two times I used JSON as storage, and EF Core (SQL) was used for the web app. I made it to practice programming and also to see the differences between different methods.</p>
+                </div>
+                <div class="m-2 ms-0">
+                    <img class="image" src="images/projects/activity-manager/unity.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="image" src="images/projects/activity-manager/console.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="image me-0" src="images/projects/activity-manager/web.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                </div>
+            </div>
+            
+            <div class="flex-center-center m-0 project">
+                <div class="content-box project">
+                    <div class="d-block me-2 project-text">
+                        <h4><a href="https://github.com/szuhi27/BattleShips" target="_blank" class="cyan-text">BattleShips</a></h4>
+                        <p>A Windows Forms application, my first bigger C# project. It was for a university class which was held by NI. My programming skills were not so good at the time, but I got praise for my UI design. This was the first game where I had to implement some kind of computer enemy it was a simple one but I think the gameplay is good.</p>
+                    </div>
+                    <div class="m-2 ms-0">
+                        <img class="image" src="images/projects/battleships/ships1.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="image" src="images/projects/battleships/ships2.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    </div>
+                </div>
+            
+                <div style="width: fit-content; height: inherit" class="content-box project project-text">
+                    <div class="d-block">
+                        <h4 class="cyan-text">Roguelite game</h4>
+                        <p>Currently working on a 2.5D semi-turn-based roguelite game with Unity. It is set in a dark fantasy universe with a unique graphic style. It is currently in early development but I have great hopes for this game, I think it has a big potential.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div  class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div  class="modal-dialog modal-dialog-centered">
+                    <div style="background: none;" class="modal-content">
+                        <div class="modal-body flex-center-center">
+                            <img style ="max-width: 85vw; max-height: 85vh" id="modal-image" src="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" data-bs-theme="dark">
+        <div class="container">
+            &copy; 2023 - davidszuhai
+        </div>
+    </footer>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

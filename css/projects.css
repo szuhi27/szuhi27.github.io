@@ -1,0 +1,17 @@
+.image {
+    margin: 0px;
+    margin-right: 1rem !important;
+    display: inline-block;
+}
+
+@media (max-width: 768px){
+    .project {
+        display: block;
+    }
+}
+
+@media (min-width: 768px){
+    .project-text {
+        max-width: 40%
+    }
+}

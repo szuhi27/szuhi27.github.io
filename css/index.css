@@ -1,0 +1,40 @@
+#info-box {
+    min-width: 270px; 
+    vertical-align: top !important;
+}
+
+#edu-picture{
+    display: none;
+}
+
+@media (min-width: 1400px) {
+    #info-box {
+        display: inline-block;
+        max-width: 30%;
+    }
+
+    #right-content-box {
+        max-width: 60%;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1400px){
+    #technologies{
+        max-width: 40%;
+    }
+
+    #info-box {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px){
+    #edu-picture{
+        display: block;
+    }
+    #edu-tech{
+        display: none;
+    }
+}
