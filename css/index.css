@@ -27,7 +27,7 @@
     }
 }
 
-@media (max-height: 900px) and (max-width: 1400px) {
+@media (max-height: 900px) and (max-width: 1400px) and (orientation: landscape) {
     #technologies {
         max-width: 40%;
     }
