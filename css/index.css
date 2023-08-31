@@ -19,8 +19,16 @@
     }
 }
 
-@media (max-width: 1400px){
-    #technologies{
+@media (min-height: 1000px) and (max-width: 1400px) {
+    #info-box {
+        display: block;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-height: 1000px) and (max-width: 1400px) {
+    #technologies {
         max-width: 40%;
     }
 
