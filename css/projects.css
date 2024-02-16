@@ -1,17 +1,31 @@
-.image {
-    margin: 0px;
-    margin-right: 1rem !important;
-    display: inline-block;
-}
+@media (max-width: 992px) {
+    .med-wrap {
+        flex-wrap: wrap;
+    }
 
-@media (max-width: 768px){
-    .project {
-        display: block;
+    .roguelite {
+        border: hidden;
+        background-color: #18181B;
+        width: 100%;
+        max-height: 25%;
+        height: auto;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding: 1.5em;
     }
 }
 
-@media (min-width: 768px){
-    .project-text {
-        max-width: 40%
+@media (min-width: 992px) {
+    .roguelite {
+        border-left: 1px solid #495057;
+        padding: 2rem;
     }
+}
+
+
+.img-box {
+    max-width: 40%;
+    border: 1px solid #495057;
+    border-radius: 25px;
+    padding: 0.5rem;
 }

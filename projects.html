@@ -35,59 +35,68 @@
         </nav>
     </header>
 
-    <div style="margin-top: 70px" class="container text-center white-text">
-        <main role="main" class="pb-3">
-            <h1 class="mb-4 cyan-text">My projects</h1>
+    <div style="margin-top: 70px" class="text-center white-text">
+        <main role="main" class="flex-vert pb-3">
+            <h1 class="mb-4 cyan-text page-title">My most important projects</h1>
 
-            <div class="content-box mb-3 project">
-                <div class="d-block me-2 project-text">
-                    <div>
-                        <img class="image" src="images/projects/woa/logo2.png" width="40px" height="40px" />
-                        <h4 class="d-inline-block"><a href="https://play.google.com/store/apps/details?id=com.WorldofAgriculture.WorldofAgriculture" target="_blank" class="cyan-text">World of Agriculture</a></h4>
+            <div class="flex mw-70-on-wide">
+                <div class="flex-vert mw-60">
+                    <div class="flex">
+                        <img class="image" src="~/images/projects/woa/logo2.png" width="40px" height="40px" />
+                        <h4><a href="https://play.google.com/store/apps/details?id=com.WorldofAgriculture.WorldofAgriculture" target="_blank" class="cyan-text">World of Agriculture</a></h4>
                     </div>
-            
+
                     <p>My first complete game was made towards the end of university in connection with my thesis. It was made with the Unity engine, It was a long project because there were a lot of new things but I also learned a lot. W.o.A is a 2D agricultural manager game published on Android as a free game. The graphics and images were made by me, mainly to test my skills in this department as well.</p>
                 </div>
-                <div class="m-2 ms-0">
-                    <img class="image" src="images/projects/woa/menu.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                    <img class="image" src="images/projects/woa/town.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                    <img class="image" src="images/projects/woa/farm.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                    <img class="image me-0" src="images/projects/woa/lands.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                <div class="img-box flex-vert">
+                    <div class="flex small-wrap">
+                        <img class="pr-img" src="~/images/projects/woa/menu.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="~/images/projects/woa/town.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    </div>
+                    <div class="flex small-wrap">
+                        <img class="pr-img" src="~/images/projects/woa/farm.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="~/images/projects/woa/lands.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    </div>
+                    
                 </div>
             </div>
-            
-            <div class="content-box mb-3 project">
-                <div class="d-block me-2 project-text">
-                    <h4><a href="https://github.com/szuhi27/ActivityManager" target="_blank" class="cyan-text">ActivityManager</a></h4>
-                    <p>I made a software to record activities, where you can start an activity, and stop it when it ends, and the program calculates the length of the activity. First I made it with Unity, then as a C# console application and finally as an ASP.NET Core web app. The first two times I used JSON as storage, and EF Core (SQL) was used for the web app. I made it to practice programming and also to see the differences between different methods.</p>
-                </div>
-                <div class="m-2 ms-0">
-                    <img class="image" src="images/projects/activity-manager/unity.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                    <img class="image" src="images/projects/activity-manager/console.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                    <img class="image me-0" src="images/projects/activity-manager/web.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+
+            <div class="grey-bcg flex">
+                <div class="flex mw-70-on-wide">
+                    <div class="flex-vert mw-60">
+                        <h4><a href="https://github.com/szuhi27/ActivityManager" target="_blank" class="cyan-text">ActivityManager</a></h4>
+                        <p>I made a software to record activities, where you can start an activity, and stop it when it ends, and the program calculates the length of the activity. First I made it with Unity, then as a C# console application and finally as an ASP.NET Core web app. The first two times I used JSON as storage, and EF Core (SQL) was used for the web app. I made it to practice programming and also to see the differences between different methods.</p>
+                    </div>
+                    <div class="img-box flex">
+                        <div class="flex-vert">
+                            <img class="pr-img" src="~/images/projects/activity-manager/console.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                            <img class="pr-img" src="~/images/projects/activity-manager/web.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        </div>
+                        <img class="pr-img" src="~/images/projects/activity-manager/unity.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    </div>
                 </div>
             </div>
-            
-            <div class="flex-center-center m-0 project">
-                <div class="content-box project">
-                    <div class="d-block me-2 project-text">
+
+            <div class="flex med-wrap mw-70-on-wide">
+                <div class="flex ps-2 pe-2">
+                    <div class="flex-vert mw-60">
                         <h4><a href="https://github.com/szuhi27/BattleShips" target="_blank" class="cyan-text">BattleShips</a></h4>
                         <p>A Windows Forms application, my first bigger C# project. It was for a university class which was held by NI. My programming skills were not so good at the time, but I got praise for my UI design. This was the first game where I had to implement some kind of computer enemy it was a simple one but I think the gameplay is good.</p>
                     </div>
-                    <div class="m-2 ms-0">
-                        <img class="image" src="images/projects/battleships/ships1.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                        <img class="image" src="images/projects/battleships/ships2.jpg" width="auto" height="250px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <div class="img-box flex small-wrap">
+                        <img class="pr-img" src="~/images/projects/battleships/ships1.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="~/images/projects/battleships/ships2.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
                     </div>
                 </div>
-            
-                <div style="width: fit-content; height: inherit" class="content-box project project-text">
-                    <div class="d-block">
+
+                <div style="width: fit-content; height: 100%" class="roguelite">
+                    <div class="flex-vert">
                         <h4 class="cyan-text">Roguelite game</h4>
                         <p>Currently working on a 2.5D semi-turn-based roguelite game with Unity. It is set in a dark fantasy universe with a unique graphic style. It is currently in early development but I have great hopes for this game, I think it has a big potential.</p>
                     </div>
                 </div>
             </div>
-            
+
             <div  class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div  class="modal-dialog modal-dialog-centered">
                     <div style="background: none;" class="modal-content">

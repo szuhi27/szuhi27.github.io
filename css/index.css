@@ -1,48 +1,7 @@
-#info-box {
-    min-width: 270px; 
-    vertical-align: top !important;
-}
-
-#edu-picture{
-    display: none;
-}
-
-@media (min-width: 1400px) {
-    #info-box {
-        display: inline-block;
-        max-width: 30%;
-    }
-
-    #right-content-box {
-        max-width: 60%;
-        display: inline-block;
-    }
-}
-
-@media only screen and (orientation: portrait) {
-    #info-box {
-        display: block;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-}
-
-@media (max-height: 900px) and (max-width: 1400px) and (orientation: landscape) {
-    #technologies {
-        max-width: 40%;
-    }
-
-    #info-box {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 768px){
-    #edu-picture{
-        display: block;
-    }
-    #edu-tech{
-        display: none;
-    }
+#face {
+    max-width: 100%;
+    border-bottom: 1px solid #495057;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 50px;
 }
