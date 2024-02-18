@@ -42,7 +42,7 @@
 
             <div class="flex small-wrap med-full-width mw-70-on-wide">
                 <div>
-                    <div class="mb-1"><img src="images/thesis/world_mobil_usage_en.png" width="auto" height="170px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" /></div>
+                    <div class="mb-1"><img src="images/thesis/world_mobil_usage_en.png" width="auto" height="170px" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="3" data-img-id="0" /></div>
                     <p class="small-text">- World mobile usage -</p>
                 </div>
                 <div class="content-box small-first-in-line">
@@ -61,14 +61,14 @@
                     </div>
                 </div>
                 <div>
-                    <img class="mb-1" src="images/thesis/elso-tervek2.png" width="auto" height="200px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="mb-1" src="images/thesis/elso-tervek2.png" width="auto" height="200px" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="3" data-img-id="1" />
                     <p class="small-text">- First plans -</p>
                 </div>
             </div>
 
             <div class="flex small-wrap med-full-width mw-70-on-wide">
                 <div>
-                    <img class="mb-1" src="images/thesis/todo-list.png" width="auto" height="200px" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                    <img class="mb-1" src="images/thesis/elso-tervek2.png" width="auto" height="200px" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="3" data-img-id="1" />
                     <p class="small-text">- Todo list -</p>
                 </div>
                 <div class="content-box">
@@ -83,7 +83,9 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div style="background: none;" class="modal-content">
                         <div class="modal-body flex">
-                            <img style="max-width: 85vw; max-height: 85vh" id="modal-image" src="" />
+                            <button type="button" class="btn btn-secondary round-button" id="prevButton">&lt</button>
+                            <img style="max-width: 80vw; max-height: 85vh" id="modal-image" src="" />
+                            <button type="button" class="btn btn-secondary round-button" id="nextButton">&gt</button>
                         </div>
                     </div>
                 </div>
@@ -98,5 +100,6 @@
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site.js"></script>
 </body>
 </html>

@@ -50,12 +50,12 @@
                 </div>
                 <div class="img-box flex-vert">
                     <div class="flex small-wrap">
-                        <img class="pr-img" src="images/projects/woa/menu.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                        <img class="pr-img" src="images/projects/woa/town.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="images/projects/woa/menu.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="0" />
+                        <img class="pr-img" src="images/projects/woa/town.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="1" />
                     </div>
                     <div class="flex small-wrap">
-                        <img class="pr-img" src="images/projects/woa/farm.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                        <img class="pr-img" src="images/projects/woa/lands.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="images/projects/woa/farm.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="2" />
+                        <img class="pr-img" src="images/projects/woa/lands.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="3" />
                     </div>
                     
                 </div>
@@ -69,10 +69,10 @@
                     </div>
                     <div class="img-box flex">
                         <div class="flex-vert">
-                            <img class="pr-img" src="images/projects/activity-manager/console.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                            <img class="pr-img" src="images/projects/activity-manager/web.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                            <img class="pr-img" src="images/projects/activity-manager/console.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="1" data-img-id="0" />
+                            <img class="pr-img" src="images/projects/activity-manager/web.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="1" data-img-id="1" />
                         </div>
-                        <img class="pr-img" src="images/projects/activity-manager/unity.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="images/projects/activity-manager/unity.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="1" data-img-id="2" />
                     </div>
                 </div>
             </div>
@@ -84,8 +84,8 @@
                         <p>A Windows Forms application, my first bigger C# project. It was for a university class which was held by NI. My programming skills were not so good at the time, but I got praise for my UI design. This was the first game where I had to implement some kind of computer enemy it was a simple one but I think the gameplay is good.</p>
                     </div>
                     <div class="img-box flex small-wrap">
-                        <img class="pr-img" src="images/projects/battleships/ships1.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
-                        <img class="pr-img" src="images/projects/battleships/ships2.jpg" onclick="getElementById('modal-image').src = this.src;" data-bs-toggle="modal" data-bs-target="#imageDisplay" />
+                        <img class="pr-img" src="images/projects/battleships/ships1.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="2" data-img-id="0" />
+                        <img class="pr-img" src="images/projects/battleships/ships2.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="2" data-img-id="1" />
                     </div>
                 </div>
 
@@ -100,8 +100,10 @@
             <div  class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div  class="modal-dialog modal-dialog-centered">
                     <div style="background: none;" class="modal-content">
-                        <div class="modal-body flex-center-center">
-                            <img style ="max-width: 85vw; max-height: 85vh" id="modal-image" src="" />
+                        <div class="modal-body flex">
+                            <button type="button" class="btn btn-secondary round-button" id="prevButton">&lt</button>
+                            <img style="max-width: 80vw; max-height: 85vh" id="modal-image" src="" />
+                            <button type="button" class="btn btn-secondary round-button" id="nextButton">&gt</button>
                         </div>
                     </div>
                 </div>
@@ -116,5 +118,6 @@
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="site.js"></script>
 </body>
 </html>
