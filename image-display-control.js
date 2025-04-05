@@ -8,6 +8,11 @@
 var currImg = 0;
 var collectionId = 0;
 
+function startup() {
+    //const 
+}
+
+
 //=====open=====
 $("#imageDisplay").on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget);
@@ -34,6 +39,37 @@ $('#imageDisplay').keydown((e) => {
         previousImage();
     }
 });
+
+//==swipe==
+let startX = 0;
+let endX = 0;
+let swipeLength = 0;
+const minSwipeLength = 50;
+
+const b = document.getElementById('modalBody')
+
+b.addEventListener('touchstart', (e) => {
+    console.log("tziopu");
+    
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+b.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    swipeLength = endX - startX; 
+    if (Math.abs(swipeLength) > minSwipeLength ){
+        swipeDirection();
+    }
+});
+
+function swipeDirection(){
+    if(swipeLength > 0){
+        previousImage();
+    }else{
+        nextImage();
+    }
+}
+//==swipe end==
 
 function previousImage(){
     currImg = (currImg - 1 + images[collectionId].length) % images[collectionId].length;
