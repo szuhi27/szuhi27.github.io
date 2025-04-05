@@ -98,26 +98,29 @@
             </div>
 
             <div  class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div  class="modal-dialog modal-dialog-centered">
+                <div  class="modal-dialog modal-fullscreen modal-dialog-centered ">
                     <div style="background: none;" class="modal-content">
-                        <div class="modal-body flex">
-                            <button type="button" class="btn btn-secondary round-button" id="prevButton">&lt</button>
+                        <div class="modal-body flex"   id="modalBody">
+                            <button type="button" class="btn btn-secondary round-button position-absolute top-50 start-0 translate-middle-y ms-2" id="prevButton">&lt</button>
                             <img style="max-width: 80vw; max-height: 85vh" id="modal-image" src="" />
-                            <button type="button" class="btn btn-secondary round-button" id="nextButton">&gt</button>
+                            <button type="button" class="btn btn-secondary round-button position-absolute top-50 end-0 translate-middle-y me-2" id="nextButton">&gt</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </main>
     </div>
 
     <footer class="border-top footer text-muted" data-bs-theme="dark">
         <div class="container">
-            &copy; 2024 - davidszuhai
+            &copy; 2025 - davidszuhai
         </div>
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="site.js"></script>
+
+    
 </body>
 </html>
