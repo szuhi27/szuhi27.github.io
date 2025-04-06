@@ -2,16 +2,12 @@
     ["images/projects/woa/menu.jpg", "images/projects/woa/town.jpg", "images/projects/woa/farm.jpg", "images/projects/woa/lands.jpg"],
     ["images/projects/activity-manager/console.jpg", "images/projects/activity-manager/web.jpg", "images/projects/activity-manager/unity.jpg"],
     ["images/projects/battleships/ships1.jpg", "images/projects/battleships/ships2.jpg"],
-    ["images/thesis/world_mobil_usage_en.png", "images/thesis/elso-tervek2.png", "images/thesis/todo-list.png"]
+    ["images/thesis/world_mobil_usage_en.png", "images/thesis/elso-tervek2.png", "images/thesis/todo-list.png"],
+    ["images/projects/bubble-quiz/main.png","images/projects/bubble-quiz/maker.png","images/projects/bubble-quiz/guess.png","images/projects/bubble-quiz/solved.png"]
 ];
 
 var currImg = 0;
 var collectionId = 0;
-
-function startup() {
-    //const 
-}
-
 
 //=====open=====
 $("#imageDisplay").on('show.bs.modal', function (event) {
