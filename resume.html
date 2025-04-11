@@ -7,6 +7,7 @@
     <title>resume</title>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/site.css"/>
+    <link rel="stylesheet" href="css/resume.css"/>
 </head>
 <body>
     <header id="top-bar">
@@ -36,15 +37,44 @@
 
     <div style="margin-top: 70px" class="container text-center white-text">
         <main role="main" class="pb-3">
-            <div style="height: 90vh" class="w-100">
-                <embed src="files/David_Szuhai_resume.pdf" type="application/pdf" width="100%" height="100%" />
+
+            <div class="container flex-vert">
+                <p class="h3 mt-2">Download my resume:</p>
+                <div class="row row-cols-2 mw-60-on-wide">
+                    <div class="col">
+                        <a href="files/David_Szuhai_resume.pdf" class="btn btn-dark content-box" download>
+                            English resume
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="files/David_Szuhai_resume_pic.pdf" class="btn btn-dark content-box" download>
+                            English with picture
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="files/Szuhai_Dávid_önéletrajz.pdf" class="btn btn-dark content-box" download>
+                            Hungarian resume
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="files/Szuhai_Dávid_önéletrajz_képpel.pdf" class="btn btn-dark content-box" download>
+                            Hungarian with picture
+                        </a>
+                    </div>
+                </div>
+                <div class="btn"></div>
             </div>
+
+            <div >
+                <img id="resume-pic" src="images/resume_pic.png" />
+            </div>
+           
         </main>
     </div>
 
     <footer class="border-top footer text-muted" data-bs-theme="dark">
         <div class="container">
-            &copy; 2024 - davidszuhai
+            &copy; 2025 - davidszuhai
         </div>
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>

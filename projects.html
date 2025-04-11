@@ -39,6 +39,30 @@
         <main role="main" class="flex-vert pb-3">
             <h1 class="mb-4 cyan-text page-title">My most important projects</h1>
 
+            <div class="grey-bcg flex">
+                <div class="flex-vert-975 mw-70-on-wide">
+                    <div class="flex-vert mw-60-975-">
+                        <h4><a href="https://davidszuhai.com/quiz/" target="_blank" class="cyan-text">Bubble Quiz</a></h4>
+                        <p>My mother, who is a teacher, asked me to make a program for her to use in her classes. It is a drag-and-drop style quiz game, created with Godot. 
+                            It features an image with designated spots where users must place the answers.  <br />
+                            Just like in the example images, users can create new quizzes by importing a base image and placing the 'questions' on it. 
+                            Then, the quiz can be opened and solved, and once all answers are placed, they can be checked.<br />
+                            -Note, the game is in Hungarian by design.-
+                        </p>
+                    </div>
+                    <div class="img-box-under-text-975 flex-vert-975-">
+                        <div class="flex small-wrap">
+                            <img class="pr-img" src="images/projects/bubble-quiz/main.png" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="4" data-img-id="0" />
+                            <img class="pr-img" src="images/projects/bubble-quiz/maker.png" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="4" data-img-id="1" />
+                        </div>
+                        <div class="flex small-wrap">
+                            <img class="pr-img" src="images/projects/bubble-quiz/guess.png" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="4" data-img-id="2" />
+                            <img class="pr-img" src="images/projects/bubble-quiz/solved.png" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="4" data-img-id="3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="flex mw-70-on-wide">
                 <div class="flex-vert mw-60">
                     <div class="flex">
@@ -57,7 +81,6 @@
                         <img class="pr-img" src="images/projects/woa/farm.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="2" />
                         <img class="pr-img" src="images/projects/woa/lands.jpg" data-bs-toggle="modal" data-bs-target="#imageDisplay" data-collection-id="0" data-img-id="3" />
                     </div>
-                    
                 </div>
             </div>
 
@@ -91,33 +114,34 @@
 
                 <div style="width: fit-content; height: 100%" class="roguelite">
                     <div class="flex-vert">
-                        <h4 class="cyan-text">Roguelite game</h4>
-                        <p>Currently working on a 2.5D semi-turn-based roguelite game with Unity. It is set in a dark fantasy universe with a unique graphic style. It is currently in early development but I have great hopes for this game, I think it has a big potential.</p>
+                        <h4 class="cyan-text">Tower defense game</h4>
+                        <p>I am currently working on a 2D tower defense game set during one of the most famous sieges in Hungarian history. Previously, I worked with Unity, but recently I switched to Godot. I think, making this game will be a big step toward my dream.</p>
                     </div>
                 </div>
             </div>
 
             <div  class="modal fade" id="imageDisplay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div  class="modal-dialog modal-dialog-centered">
+                <div  class="modal-dialog modal-fullscreen modal-dialog-centered ">
                     <div style="background: none;" class="modal-content">
-                        <div class="modal-body flex">
-                            <button type="button" class="btn btn-secondary round-button" id="prevButton">&lt</button>
+                        <div class="modal-body flex"   id="modalBody">
+                            <button type="button" class="btn btn-secondary round-button position-absolute top-50 start-0 translate-middle-y ms-2" id="prevButton">&lt</button>
                             <img style="max-width: 80vw; max-height: 85vh" id="modal-image" src="" />
-                            <button type="button" class="btn btn-secondary round-button" id="nextButton">&gt</button>
+                            <button type="button" class="btn btn-secondary round-button position-absolute top-50 end-0 translate-middle-y me-2" id="nextButton">&gt</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </main>
     </div>
 
     <footer class="border-top footer text-muted" data-bs-theme="dark">
         <div class="container">
-            &copy; 2024 - davidszuhai
+            &copy; 2025 - davidszuhai
         </div>
     </footer>
     <script src="lib/jquery/dist/jquery.min.js"></script>
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="site.js"></script>
+    <script src="image-display-control.js"></script>
 </body>
 </html>

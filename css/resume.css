@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    #resume-pic{
+        height: auto;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #resume-pic{
+        height: auto;
+        width: 85%;
+    }
+}
