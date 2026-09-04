@@ -3,7 +3,8 @@
     ["images/projects/activity-manager/console.jpg", "images/projects/activity-manager/web.jpg", "images/projects/activity-manager/unity.jpg"],
     ["images/projects/battleships/ships1.jpg", "images/projects/battleships/ships2.jpg"],
     ["images/thesis/world_mobil_usage_en.png", "images/thesis/elso-tervek2.png", "images/thesis/todo-list.png"],
-    ["images/projects/bubble-quiz/main.png","images/projects/bubble-quiz/maker.png","images/projects/bubble-quiz/guess.png","images/projects/bubble-quiz/solved.png"]
+    ["images/projects/bubble-quiz/main.png","images/projects/bubble-quiz/maker.png","images/projects/bubble-quiz/guess.png","images/projects/bubble-quiz/solved.png"],
+    ["images/projects/ectd/ectd-1.png","images/projects/ectd/ectd-2.png","images/projects/ectd/ectd-3.png"]
 ];
 
 var currImg = 0;
